@@ -452,8 +452,24 @@ footer h3{
 	.grid.rooms{
         grid-template-columns:1fr;
         justify-items:center;
-		padding: 0 6px;
     }
+}
+	@media (max-width: 768px){
+
+  #szallas .card{
+    padding: 40px 14px;
+  }
+
+  #szallas .container{
+    padding: 0 8px;
+  }
+
+  #szallas .grid.rooms{
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 18px;
+  }
+
 }
 
 nav{
