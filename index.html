@@ -49,11 +49,6 @@ h2::after{
     background:linear-gradient(90deg,transparent,var(--gold),transparent);
 }
 @media(max-width:768px){
-
-    .card{
-        padding:40px 18px;
-    }
-
     h2{
         font-size:clamp(1.8rem, 6vw, 2.4rem);
         line-height:1.2;
@@ -448,23 +443,18 @@ footer h3{
     .room > strong:first-child{
         font-size:1.15rem;
     }
-
-	.grid.rooms{
-        grid-template-columns:1fr;
-        justify-items:center;
-    }
 }
-	@media (max-width: 768px){
+@media (max-width: 768px){
 
-  #szallas .card{
-    padding: 40px 14px;
+  .card{
+    padding: 40px 18px;
   }
 
-  #szallas .container{
-    padding: 0 8px;
+  .container{
+    padding: 0 10px;
   }
 
-  #szallas .grid.rooms{
+   .grid.rooms{
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 18px;
