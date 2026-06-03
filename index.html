@@ -355,6 +355,22 @@ footer h3{
     margin:14px 0 18px;
     color:var(--gold-dark);
 }
+	
+.hero-title span{
+	display:inline-block;
+	margin:0 10px;
+}
+
+@media(max-width:768px){
+	.hero-title{
+		line-height:1.2;
+	}
+	
+	.hero-title span{
+		display:block;
+		margin:10px 0;
+	}
+}
 
 /* LISTA */
 .room ul{
@@ -400,15 +416,29 @@ footer h3{
     font-weight:500;
 }
 
+.rooms{
+    width:100%;
+    justify-content:center;
+    align-items:stretch;
+    margin:0 auto;
+}
+
 /* mobil */
 @media(max-width:768px){
     .room{
+		width:100%;
+        max-width:420px;
         padding:24px;
         border-radius:22px;
     }
 
     .room > strong:first-child{
         font-size:1.15rem;
+    }
+
+	.grid.rooms{
+        grid-template-columns:1fr;
+        justify-items:center;
     }
 }
 
@@ -515,7 +545,9 @@ nav.open ul.menu{
 
 <div class="hero-content">
 <div class="hero-small">Esküvői Meghívó</div>
-<h1>Bettina & Krisztián</h1>
+<h1 class="hero-title">
+  Bettina <span>&</span> Krisztián
+</h1>
 <div class="hero-date">2026. augusztus 22.</div>
 
 <div class="countdown">
